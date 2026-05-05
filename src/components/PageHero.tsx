@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import { ChevronRight } from "lucide-react";
 import type { ReactNode } from "react";
 import { motion } from "motion/react";
-import { cn } from "../lib/cn";
+import { cn, asset } from "../lib/cn";
 
 export function PageHero({
   kicker,
@@ -101,7 +101,7 @@ export function PageHero({
             >
               <div className="aspect-[4/5] rounded-3xl overflow-hidden">
                 <img
-                  src={image}
+                  src={asset(image)}
                   alt={imageAlt ?? ""}
                   className="w-full h-full object-cover image-warm"
                   loading="eager"

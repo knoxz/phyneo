@@ -4,6 +4,7 @@ import { ArrowUpRight, ArrowDown, Sparkle, Phone, Mail } from "lucide-react";
 import { useRef } from "react";
 import { PILLARS, ACCENT_STYLES } from "../data/pillars";
 import { Reveal } from "../components/Reveal";
+import { asset } from "../lib/cn";
 
 export function Home() {
   return (
@@ -106,7 +107,7 @@ function Hero() {
         >
           <div className="aspect-[3/4] rounded-[2px] overflow-hidden border border-ink/10">
             <img
-              src="/images/kinder_tragetuch.jpg"
+              src={asset("/images/kinder_tragetuch.jpg")}
               alt="Mutter trägt Baby in Tragetuch"
               className="w-full h-full object-cover image-warm"
               loading="eager"
@@ -232,7 +233,7 @@ function PillarRow({ pillar, idx }: { pillar: (typeof PILLARS)[number]; idx: num
         <div className={`grid grid-cols-12 gap-0 ${reverse ? "lg:[direction:rtl]" : ""}`}>
           <div className="col-span-12 lg:col-span-5 relative aspect-[4/3] lg:aspect-auto overflow-hidden [direction:ltr]">
             <img
-              src={pillar.image}
+              src={asset(pillar.image)}
               alt={pillar.imageAlt}
               className="absolute inset-0 w-full h-full object-cover image-warm card-hover-image"
               loading="lazy"
@@ -375,7 +376,7 @@ function Credentials() {
         <Reveal className="col-span-12 lg:col-span-5">
           <div className="relative aspect-[4/5] rounded-3xl overflow-hidden">
             <img
-              src="/images/ueber_mich_katharina_anders.jpg"
+              src={asset("/images/ueber_mich_katharina_anders.jpg")}
               alt="Katharina Anders"
               className="absolute inset-0 w-full h-full object-cover image-warm"
               loading="lazy"

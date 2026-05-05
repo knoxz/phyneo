@@ -3,6 +3,7 @@ import { ArrowUpRight, Sparkles, Calendar, Clock } from "lucide-react";
 import { COURSES } from "../data/courses";
 import { PageHero } from "../components/PageHero";
 import { Reveal } from "../components/Reveal";
+import { asset } from "../lib/cn";
 
 export function Kurse() {
   return (
@@ -41,7 +42,7 @@ export function Kurse() {
               >
                 <div className="relative aspect-[16/9] overflow-hidden">
                   <img
-                    src={c.image}
+                    src={asset(c.image)}
                     alt={c.imageAlt}
                     className="absolute inset-0 w-full h-full object-cover image-warm card-hover-image"
                     loading={i < 2 ? "eager" : "lazy"}

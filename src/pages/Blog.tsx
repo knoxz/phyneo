@@ -2,6 +2,7 @@ import { ArrowUpRight } from "lucide-react";
 import { BLOG } from "../data/blog";
 import { PageHero } from "../components/PageHero";
 import { Reveal } from "../components/Reveal";
+import { asset } from "../lib/cn";
 
 export function Blog() {
   const ratgeber = BLOG.filter((p) => p.category === "Ratgeber");
@@ -29,7 +30,7 @@ export function Blog() {
               >
                 <div className="aspect-[16/10] overflow-hidden">
                   <img
-                    src={post.image}
+                    src={asset(post.image)}
                     alt={post.title}
                     className="w-full h-full object-cover image-warm card-hover-image"
                     loading={i < 3 ? "eager" : "lazy"}
@@ -66,7 +67,7 @@ export function Blog() {
               >
                 <div className="aspect-[16/10] overflow-hidden bg-cream-200">
                   <img
-                    src={post.image}
+                    src={asset(post.image)}
                     alt={post.title}
                     className="w-full h-full object-cover card-hover-image"
                     loading="lazy"

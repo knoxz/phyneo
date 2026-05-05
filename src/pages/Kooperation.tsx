@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { ArrowUpRight, Phone, Mail } from "lucide-react";
 import { PageHero } from "../components/PageHero";
 import { Reveal } from "../components/Reveal";
+import { asset } from "../lib/cn";
 
 export function Kooperation() {
   return (
@@ -19,7 +20,7 @@ export function Kooperation() {
           <div className="bg-cream-100 rounded-3xl p-8 lg:p-12 border border-ink/5 grid grid-cols-12 gap-y-8 gap-x-8">
             <div className="col-span-12 lg:col-span-5 flex items-center justify-center bg-cream-50 rounded-2xl aspect-[4/3] lg:aspect-auto p-8">
               <img
-                src="/images/kooperation_logo_anders_physiotherapie.jpg"
+                src={asset("/images/kooperation_logo_anders_physiotherapie.jpg")}
                 alt="Logo Anders Physiotherapie"
                 className="max-w-full max-h-32 object-contain"
                 loading="lazy"
