@@ -132,7 +132,7 @@ export const SERVICES: Service[] = [
     imageAlt: "Trageberatung – Mutter mit Baby im Tragetuch",
     accent: "terra",
     body: [
-      "Tageberatung für Säuglinge: fachkundige Unterstützung durch erfahrene Kinder- und Säuglingstherapeutinnen. Du profitierst von langjähriger Erfahrung und der Ausbildung als zertifizierte Kinder-Bobath-Therapeutin.",
+      "Trageberatung für Säuglinge: fachkundige Unterstützung durch erfahrene Kinder- und Säuglingstherapeutinnen. Du profitierst von langjähriger Erfahrung und der Ausbildung als zertifizierte Kinder-Bobath-Therapeutin.",
       "Wir zeigen Dir verschiedene Tragetücher und Babytragen, üben gemeinsam mit Tragepuppe und – wenn alles gut sitzt – natürlich mit Deinem Baby. Auch das Tragen auf dem Arm wird Thema sein, mit konkreten Tipps für ein entwicklungsförderndes Handling.",
       "Für Kinder mit besonderen Bedürfnissen finden wir abseits des Mainstreams Möglichkeiten, die zu Eurer Familie passen.",
     ],
